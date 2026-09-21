@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Flores amarillas para mi amor 🌻</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 12px;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #fff8df, #ffe9a6, #fff4d7);
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.tarjeta {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 720px;
+    text-align: center;
+    padding: 30px 18px;
+    border: 2px solid #f1d58b;
+    border-radius: 28px;
+    background: rgba(255, 255, 248, 0.90);
+    box-shadow: 0 15px 45px rgba(167, 122, 41, 0.15);
+}
+
+h1 {
+    color: #a66a08;
+    font-size: clamp(28px, 6vw, 45px);
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.subtitulo {
+    color: #9b773c;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.ramo {
+    display: block;
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
+    filter: drop-shadow(0 10px 8px rgba(110, 77, 25, 0.12));
+}
+
+.flor {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: bailar 4s ease-in-out infinite;
+}
+
+.mensaje {
+    color: #87551a;
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 8px auto 12px;
+}
+
+.te-amo {
+    color: #c47c14;
+    font-size: clamp(32px, 7vw, 45px);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    margin: 8px;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 30px;
+    background: #e5a91e;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(189, 139, 40, 0.25);
+    transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+    background: #c98b0d;
+    transform: scale(1.05);
+}
+
+#sorpresa {
+    display: none;
+    margin-top: 22px;
+    color: #a36508;
+    font-size: 22px;
+    line-height: 1.6;
+    animation: aparecer 1.2s ease;
+}
+
+#estadoMusica {
+    margin-top: 10px;
+    color: #98743a;
+    font-size: 14px;
+}
+
+.particula {
+    position: fixed;
+    top: -40px;
+    z-index: 1;
+    pointer-events: none;
+    animation: caer linear forwards;
+}
+
+@keyframes bailar {
+    0%, 100% {
+        transform: rotate(-2deg);
+    }
+    50% {
+        transform: rotate(2deg);
+    }
+}
+
+@keyframes caer {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 480px) {
+    .tarjeta {
+        padding: 24px 10px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 13px 19px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="tarjeta">
+
+    <h1>🌻 Para mi amor 🌻</h1>
+
+    <p class="subtitulo">
+        Un ramo especial para la persona que ilumina mi vida
+    </p>
+
+    <!-- ================================== -->
+    <!-- DIBUJO DEL RAMO CON SVG             -->
+    <!-- ================================== -->
+
+    <svg class="ramo" viewBox="0 0 600 570"
+         xmlns="http://www.w3.org/2000/svg">
+
+        <defs>
+
+            <!-- GIRASOL -->
+            <g id="girasol">
+
+                <g fill="#ffc928" stroke="#e8a50b" stroke-width="1.5">
+                    <ellipse cx="0" cy="-48" rx="17" ry="31"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(30)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(60)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(90)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(120)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(150)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(180)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(210)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(240)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(270)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(300)"/>
+                    <ellipse cx="0" cy="-48" rx="17" ry="31" transform="rotate(330)"/>
+                </g>
+
+                <circle r="30" fill="#593017"/>
+                <circle r="24" fill="#75421d"/>
+
+                <g fill="#d9a24b">
+                    <circle cx="-12" cy="-10" r="3"/>
+                    <circle cx="2" cy="-15" r="3"/>
+                    <circle cx="13" cy="-5" r="3"/>
+                    <circle cx="-17" cy="4" r="3"/>
+                    <circle cx="-3" cy="2" r="3"/>
+                    <circle cx="10" cy="11" r="3"/>
+                    <circle cx="-8" cy="15" r="3"/>
+                    <circle cx="18" cy="10" r="2.5"/>
+                    <circle cx="-18" cy="-13" r="2.5"/>
+                    <circle cx="3" cy="19" r="2.5"/>
+                </g>
+            </g>
+
+            <!-- GERBERA AMARILLA -->
+            <g id="gerbera">
+
+                <g fill="#ffe34d" stroke="#eab51b" stroke-width="1.2">
+                    <ellipse cx="0" cy="-43" rx="10" ry="28"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(22.5)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(45)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(67.5)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(90)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(112.5)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(135)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(157.5)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(180)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(202.5)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(225)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(247.5)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(270)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(292.5)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(315)"/>
+                    <ellipse cx="0" cy="-43" rx="10" ry="28" transform="rotate(337.5)"/>
+                </g>
+
+                <circle r="21" fill="#bd681b"/>
+                <circle r="15" fill="#6c381b"/>
+
+                <g fill="#f5c85b">
+                    <circle cx="-7" cy="-6" r="2.5"/>
+                    <circle cx="4" cy="-8" r="2.5"/>
+                    <circle cx="9" cy="2" r="2.5"/>
+                    <circle cx="-5" cy="5" r="2.5"/>
+                    <circle cx="1" cy="2" r="2.5"/>
+                </g>
+            </g>
+
+            <!-- FLORECITAS PEQUENAS -->
+            <g id="florecita">
+                <g fill="#ffe77a" stroke="#e5b832" stroke-width="1">
+                    <ellipse cy="-13" rx="6" ry="11"/>
+                    <ellipse cy="-13" rx="6" ry="11" transform="rotate(60)"/>
+                    <ellipse cy="-13" rx="6" ry="11" transform="rotate(120)"/>
+                    <ellipse cy="-13" rx="6" ry="11" transform="rotate(180)"/>
+                    <ellipse cy="-13" rx="6" ry="11" transform="rotate(240)"/>
+                    <ellipse cy="-13" rx="6" ry="11" transform="rotate(300)"/>
+                </g>
+                <circle r="5" fill="#b87b24"/>
+            </g>
+
+        </defs>
+
+        <!-- TALLOS -->
+        <g fill="none" stroke="#477c3a" stroke-width="9"
+           stroke-linecap="round">
+            <path d="M300 470 Q220 320 115 175"/>
+            <path d="M300 470 Q260 300 235 115"/>
+            <path d="M300 470 Q350 300 475 175"/>
+            <path d="M300 470 Q190 360 205 245"/>
+            <path d="M300 470 Q420 350 395 250"/>
+            <path d="M300 470 Q300 330 315 235"/>
+        </g>
+
+        <!-- HOJAS -->
+        <g fill="#639b48" stroke="#3d7131" stroke-width="2">
+            <path d="M255 390 Q155 335 130 390 Q190 410 255 390"/>
+            <path d="M340 390 Q430 310 480 355 Q425 405 340 390"/>
+            <path d="M220 330 Q130 275 150 235 Q210 265 220 330"/>
+            <path d="M370 330 Q430 250 475 275 Q435 325 370 330"/>
+            <path d="M285 420 Q210 375 195 425 Q245 450 285 420"/>
+            <path d="M325 430 Q395 380 425 425 Q380 455 325 430"/>
+            <path d="M270 285 Q205 220 190 270 Q225 300 270 285"/>
+            <path d="M340 280 Q400 210 430 245 Q390 290 340 280"/>
+        </g>
+
+        <!-- FLORES TRASERAS -->
+        <g class="flor">
+            <use href="#gerbera" transform="translate(155 205) scale(0.78)"/>
+            <use href="#girasol" transform="translate(235 135) scale(0.9)"/>
+            <use href="#gerbera" transform="translate(395 205) scale(0.85)"/>
+            <use href="#girasol" transform="translate(475 175) scale(0.82)"/>
+            <use href="#gerbera" transform="translate(315 245) scale(0.75)"/>
+        </g>
+
+        <!-- FLORES DELANTERAS -->
+        <g class="flor">
+            <use href="#girasol" transform="translate(155 300) scale(1.05)"/>
+            <use href="#gerbera" transform="translate(285 320) scale(1.05)"/>
+            <use href="#girasol" transform="translate(425 305) scale(1.05)"/>
+        </g>
+
+        <!-- FLORECITAS COMPLEMENTARIAS -->
+        <g class="flor">
+            <use href="#florecita" transform="translate(205 170)"/>
+            <use href="#florecita" transform="translate(350 160)"/>
+            <use href="#florecita" transform="translate(105 260) scale(0.8)"/>
+            <use href="#florecita" transform="translate(490 260) scale(0.8)"/>
+            <use href="#florecita" transform="translate(230 245) scale(0.7)"/>
+            <use href="#florecita" transform="translate(365 245) scale(0.7)"/>
+        </g>
+
+        <!-- PAPEL DEL RAMO -->
+        <path d="M115 350 L485 350 L375 500
+                 Q300 550 225 500 Z"
+              fill="#c99b68" stroke="#a97845" stroke-width="3"/>
+
+        <path d="M145 365 L455 365 L365 485
+                 Q300 525 235 485 Z"
+              fill="#f4dfbd"/>
+
+        <path d="M180 370 L300 475 L420 370 L365 490
+                 Q300 535 235 490 Z"
+              fill="#e6c59a" opacity="0.85"/>
+
+        <!-- LAZO DORADO -->
+        <path d="M295 445
+                 C245 400 205 430 235 465
+                 L290 475
+                 L255 515
+                 Q300 535 325 495
+                 L365 515
+                 Q395 465 335 450
+                 L310 470 Z"
+              fill="#e8ae24" stroke="#c58b12" stroke-width="3"/>
+
+        <ellipse cx="305" cy="470" rx="22" ry="20"
+                 fill="#ffda5b" stroke="#c58b12" stroke-width="3"/>
+
+        <!-- CORAZONES -->
+        <g fill="#e9b73e" opacity="0.8">
+            <text x="65" y="300" font-size="35">♥</text>
+            <text x="495" y="320" font-size="38">♥</text>
+            <text x="90" y="440" font-size="24">♥</text>
+            <text x="480" y="450" font-size="27">♥</text>
+        </g>
+
+    </svg>
+
+    <!-- MENSAJE ROMANTICO -->
+    <p class="mensaje">
+        Feliz día de las flores amarillas, mi amor 🌻
+    </p>
+
+    <p class="te-amo">
+        ¡Te amo MILELE! 🖇️🤍
+    </p>
+
+    <!-- BOTON PARA LA MUSICA -->
+    <button id="botonMusica" onclick="reproducirMusica()">
+        🎵 Escuchar Flores amarillas
+    </button>
+
+    <p id="estadoMusica">
+        Pulsa el botón para escuchar nuestra canción 💛
+    </p>
+
+    <!-- BOTON DE SORPRESA -->
+    <button onclick="mostrarSorpresa()">
+        💌 Abre tu sorpresa
+    </button>
+
+    <div id="sorpresa">
+        Eres mi alegría, mi lugar favorito<br>
+        y la persona con quien quiero compartir<br>
+        muchísimos momentos hermosos. 💛<br><br>
+
+        Gracias por llenar mi vida de amor.<br>
+        Siempre quiero verte sonreír.<br><br>
+
+        <span style="font-size: 32px;">
+            🌻 Te amo muchísimo 🌻
+        </span>
+    </div>
+
+    <!-- ARCHIVO DE MUSICA -->
+    <audio id="musica" loop>
+        <source src="flores_amarillas.mp3" type="audio/mpeg">
+    </audio>
+
+</div>
+
+<script>
+
+    // =====================================
+    // REPRODUCIR Y PAUSAR LA CANCION
+    // =====================================
+
+    const musica = document.getElementById("musica");
+    const botonMusica = document.getElementById("botonMusica");
+    const estadoMusica = document.getElementById("estadoMusica");
+
+    function reproducirMusica() {
+
+        if (musica.paused) {
+
+            musica.play()
+                .then(() => {
+                    botonMusica.textContent = "⏸ Pausar canción";
+                    estadoMusica.textContent =
+                        "Reproduciendo Flores amarillas - Floricienta 💛";
+                })
+                .catch(() => {
+                    estadoMusica.textContent =
+                        "No se pudo reproducir. Verifica que el archivo MP3 esté en la carpeta.";
+                });
+
+        } else {
+
+            musica.pause();
+
+            botonMusica.textContent = "🎵 Escuchar Flores amarillas";
+            estadoMusica.textContent = "Canción pausada 💛";
+        }
+    }
+
+    // =====================================
+    // MOSTRAR MENSAJE SORPRESA
+    // =====================================
+
+    function mostrarSorpresa() {
+
+        const sorpresa = document.getElementById("sorpresa");
+
+        if (sorpresa.style.display === "block") {
+            sorpresa.style.display = "none";
+        } else {
+            sorpresa.style.display = "block";
+        }
+    }
+
+    // =====================================
+    // FLORES Y CORAZONES FLOTANTES
+    // =====================================
+
+    function crearParticula() {
+
+        const elemento = document.createElement("div");
+
+        elemento.className = "particula";
+
+        const decoraciones = ["💛", "🌼", "✨", "🌻", "❤️"];
+
+        elemento.textContent =
+            decoraciones[Math.floor(Math.random() * decoraciones.length)];
+
+        elemento.style.left = Math.random() * 100 + "vw";
+
+        elemento.style.fontSize =
+            (18 + Math.random() * 18) + "px";
+
+        elemento.style.animationDuration =
+            (5 + Math.random() * 5) + "s";
+
+        document.body.appendChild(elemento);
+
+        setTimeout(() => {
+            elemento.remove();
+        }, 10000);
+    }
+
+    setInterval(crearParticula, 650);
+
+</script>
+
+</body>
+</html>
